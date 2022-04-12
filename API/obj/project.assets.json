@@ -5847,11 +5847,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lavad\\source\\repos\\LavadTesting\\LavadTesting\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Lavad\\source\\repos\\LavadTesting\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Lavad\\source\\repos\\LavadTesting\\LavadTesting\\API.csproj",
+      "projectPath": "C:\\Users\\Lavad\\source\\repos\\LavadTesting\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Lavad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lavad\\source\\repos\\LavadTesting\\LavadTesting\\obj\\",
+      "outputPath": "C:\\Users\\Lavad\\source\\repos\\LavadTesting\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lavad\\AppData\\Roaming\\NuGet\\NuGet.Config",

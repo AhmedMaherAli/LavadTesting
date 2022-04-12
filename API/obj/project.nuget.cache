@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pYCM0g1vGzU5KecYKqIQqHIkp3d8pRcgq7lbbNBTAhFpVwFdj9po9J5cYan2aghAlUSfMTOx/heB7AaZW53mSA==",
+  "dgSpecHash": "GeOrf4Ce60uj628pc8wYHoCFaEg47BcNnUg0fz+PE4wZK/DIYK6AcdBXestTdDqWlWNCsws21wZQUWEoqnh17w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lavad\\source\\repos\\LavadTesting\\LavadTesting\\API.csproj",
+  "projectFilePath": "C:\\Users\\Lavad\\source\\repos\\LavadTesting\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lavad\\.nuget\\packages\\automapper\\7.0.1\\automapper.7.0.1.nupkg.sha512",
     "C:\\Users\\Lavad\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\5.0.1\\automapper.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512",
