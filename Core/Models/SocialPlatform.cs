@@ -11,6 +11,5 @@ namespace LavadTesting.Models
         public string Key { get; set; }
         public int DisplayOrder { get; set; }
         public bool Deleted { get; set; }
-        public bool IsLinkingEnabled { get; set; }   
     }
 }

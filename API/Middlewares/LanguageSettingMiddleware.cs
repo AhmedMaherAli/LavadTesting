@@ -20,7 +20,7 @@ namespace LavadTesting.Middlewares
 
         public Task Invoke(HttpContext httpContext)
         {
-            string languageValue= "ar";
+            string languageValue= "";
             
             if(httpContext.Request.Headers.TryGetValue("languageKey", out var lang))
                 languageValue = lang;
@@ -28,6 +28,11 @@ namespace LavadTesting.Middlewares
             if(languageValue!="")
             {
                 var cultureInfo = new CultureInfo(languageValue);
+                CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            }
+            if(string.IsNullOrEmpty(CultureInfo.DefaultThreadCurrentCulture.Name))
+            {
+                var cultureInfo = new CultureInfo("ar");
                 CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
             }
 

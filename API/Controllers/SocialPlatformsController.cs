@@ -2,10 +2,12 @@
 using InfraStructure.Services;
 using LavadTesting.Infrastructure.DTOs;
 using LavadTesting.Infrastructure.Interfaces;
+using LavadTesting.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -48,7 +50,7 @@ namespace LavadTesting.Controllers
             }
         }
 
-        [HttpGet("GetSocialPlatforms")]
+        [HttpGet("GetAllSocialPlatforms")]
         public async Task<ActionResult<IReadOnlyList<SocialPlatformDTO>>> getSocailPlatforms()
         {
             try
@@ -75,6 +77,13 @@ namespace LavadTesting.Controllers
                 return Ok(result);
             return BadRequest();
         }
+        [HttpGet("GetAllActiveSocialPlatforms")]
+        public async Task<ActionResult<IReadOnlyList<SocialPlatformDTO>>> GetActiveRequests()
+        {
+            var activePlatForms = await _unitOfWork.SocialPlatforms.GetAll(s => s.Deleted==false);
+            return Ok(mapper.Map<IList<SocialPlatformDTO>>(activePlatForms));
+        }
+
 
     }
 }
